@@ -78,3 +78,5 @@ for (let index = 0; index < 500; index++) {
     strip2.show()
     basic.pause(100)
 }
+strip2 = neopixel.create(DigitalPin.P0, 15, NeoPixelMode.RGB)
+strip2.showColor(neopixel.rgb(randint(0, 65), randint(0, 65), randint(0, 65)))
