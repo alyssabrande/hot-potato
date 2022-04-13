@@ -1,8 +1,5 @@
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
-    range = strip2.range(0, 4)
-    range2 = strip2.range(4, 10)
-    range3 = strip2.range(10, 15)
     basic.pause(1000)
     range.showColor(neopixel.colors(NeoPixelColors.Red))
     range2.showColor(neopixel.colors(NeoPixelColors.Yellow))
@@ -72,11 +69,12 @@ let range: neopixel.Strip = null
 let strip2: neopixel.Strip = null
 basic.showString("Hello!")
 strip2 = neopixel.create(DigitalPin.P0, 15, NeoPixelMode.RGB)
+range = strip2.range(0, 4)
+range2 = strip2.range(4, 10)
+range3 = strip2.range(10, 15)
 strip2.showColor(neopixel.rgb(randint(0, 65), randint(0, 65), randint(0, 65)))
 for (let index = 0; index < 500; index++) {
     strip2.rotate(1)
     strip2.show()
     basic.pause(100)
 }
-strip2 = neopixel.create(DigitalPin.P0, 15, NeoPixelMode.RGB)
-strip2.showColor(neopixel.rgb(randint(0, 65), randint(0, 65), randint(0, 65)))
