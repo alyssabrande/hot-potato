@@ -1,10 +1,11 @@
 {
-    "name": "Hot Potato",
+    "name": "Hot Potato w/ neo pixels",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "NeoPixels": "github:alyssabrande/neopixels#master"
     },
     "files": [
         "main.blocks",
